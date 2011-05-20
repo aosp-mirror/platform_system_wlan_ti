@@ -1,0 +1,8 @@
+Change-Id: Id457dbf9647c45a2ab16d636705d4bedd7cfa62d
+Code-Review+2: Jean-Baptiste Queru <jbq@google.com>
+Verified+1: Jean-Baptiste Queru <jbq@google.com>
+Submitted-by: Jean-Baptiste Queru <jbq@google.com>
+Submitted-at: Wed, 18 Mar 2009 17:52:13 -0700
+Reviewed-on: https://review.source.android.com/9210
+Project: platform/system/wlan/ti
+Branch: refs/heads/master
