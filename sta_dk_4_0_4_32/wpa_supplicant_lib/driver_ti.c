@@ -1356,7 +1356,7 @@ static void *wpa_driver_tista_init( void *priv, const char *ifname )
 
     os_memset( &echoserver, 0, sizeof(echoserver) );  /* Clear struct */
     echoserver.sin_family = AF_INET;                  /* Internet/IP */
-    echoserver.sin_addr.s_addr = htonl(INADDR_ANY);   /* IP address */
+    inet_aton("127.0.0.1", &echoserver.sin_addr);     /* bind to loopback ONLY */
     echoserver.sin_port = htons(TI_DRIVER_MSG_PORT);  /* server port */
 
     if( bind(myDrv->driverEventsSocket, (struct sockaddr *) &echoserver, sizeof(echoserver)) < 0 ) {
